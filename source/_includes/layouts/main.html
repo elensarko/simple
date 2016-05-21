@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+{% include "_includes/navbar/navbar.html" %}
+
+<h1>Layout</h1>
+
+{% block content %}{% endblock %}
+
+<script src="js/script.min.js"></script>
+</body>
+</html>

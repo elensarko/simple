@@ -1,0 +1,21 @@
+{
+  "name": "simple",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Anton Isaykin <isaykin@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/oowl/simple",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "jquery": "^2.2.4"
+  }
+}

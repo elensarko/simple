@@ -1,0 +1,44 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/gulp",
+    "deploy": "cross-env NODE_ENV=production ./node_modules/.bin/gulp build && cross-env ./node_modules/.bin/gulp deploy",
+    "postinstall": "bower install",
+    "postupdate": "bower update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oowl/simple.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oowl/simple/issues"
+  },
+  "homepage": "https://github.com/oowl/simple#readme",
+  "dependencies": {
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.12.5",
+    "css-mqpacker": "^4.0.1",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-cleancss": "^0.2.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-dust": "^3.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-newer": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "gulp-uglify": "^1.5.3",
+    "gulp-uncss": "^1.0.5",
+    "imagemin-pngquant": "4.2.2"
+  }
+}
