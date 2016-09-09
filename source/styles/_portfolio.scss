@@ -1,0 +1,73 @@
+/* Стили для телефона */
+//.portfolio {
+//
+//  &__inner {
+//  }
+//
+//  .carousel-indicators li {
+//    border: 1px solid #839A9C;
+//    background-color: #ccc;
+//  }
+//  .carousel-indicators .active {
+//    background-color: #839A9C;
+//  }
+//
+//  .carousel-inner > .item > img,
+//  .carousel-inner > .item > a > img {
+//    width: 100%;
+//    height: auto;
+//  }
+//}
+
+article.project {
+  padding-bottom: 60px;
+
+  &:last-of-type {
+    padding-bottom: 100px;
+  }
+}
+
+.project__wrapper {
+  border: 1px solid #9fb1b3;
+}
+
+.carousel-indicators {
+  bottom: -60px!important;
+}
+
+.carousel-indicators li {
+  border: 1px solid #9fb1b3;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+.carousel-indicators .active {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  background-color: $link-hover-color;
+}
+
+
+
+/* Стили для планшета */
+@media (min-width: $screen-sm-min) {
+  .portfolio {
+
+  }
+}
+
+
+
+/* Стили для десктопов*/
+@media (min-width: $screen-md-min) {
+
+}
+
+
+
+/* Стили для десктопа и широких экранов */
+@media (min-width: $screen-lg-min)  {
+
+}

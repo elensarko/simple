@@ -1,0 +1,107 @@
+/* Стили для телефона */
+.portfolio-index {
+  //padding: 10px;
+  margin-bottom: 60px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  &__item {
+    flex-basis: 220px;
+    flex-grow: 1;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+
+    &:hover {
+      .project__description {
+        visibility: visible;
+        border-bottom-color: #839A9C;
+      }
+
+      .hover_img {
+        filter: grayscale(1);
+      }
+    }
+
+    &-wrapper {
+      position: relative;
+    }
+
+    .hover_img {
+      position: relative;
+      //height: 130px;
+      font-size: 0;
+      overflow: hidden;
+      border: 1px solid $gray-light;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .project__description {
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      bottom:0;
+      left: 0;
+      right: 0;
+      padding: 20% 10px 14px;
+      color: #979797;
+      background-color: #f4f4f4;
+      border: 1px solid $gray-light;
+      border-bottom: 2px solid $gray-light;
+
+      h4 {
+        margin: 0 0 15px;
+        margin-bottom: 11px;
+        line-height: 20px;
+        font-size: 17px;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin: 0 0 20px;
+        color: #979797;
+      }
+    }
+
+    .btn {
+      font-size: 18px;
+    }
+  }
+  &__link {
+    text-align: right;
+
+    > .btn {
+      font-size: 18px;
+    }
+  }
+}
+
+/* Стили для планшета */
+@media (min-width: $screen-sm-min) {
+  .portfolio-index {
+    //padding-right: 10%;
+    //padding-left: 10%;
+  }
+}
+
+/* Стили для десктопов*/
+@media (min-width: $screen-md-min) {
+  .portfolio-index {
+    //padding-right: 0;
+    //padding-left: 0;
+  }
+
+}
+
+/* Стили для десктопа и широких экранов */
+@media (min-width: $screen-lg-min) {
+
+}

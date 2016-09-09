@@ -4,17 +4,20 @@
 <head>
     <meta charset="utf-8">
     <title>{% block title %}{% endblock %}</title>
-    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="/img/favicon.jpg">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&amp;subset=cyrillic,latin" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
-{% include "_includes/navbar/navbar.html" %}
-
-<h1>Layout</h1>
+{% include "_includes/header/header.html" %}
 
 {% block content %}{% endblock %}
+
+{% include "_includes/footer/footer.html" %}
 
 <script src="js/script.min.js"></script>
 </body>

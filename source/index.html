@@ -2,12 +2,191 @@
 
 {% set page = "index" %}
 
-{% block title %}Index page{% endblock %}
+{% block title %}Inna Krishtal{% endblock %}
 
 {% block content %}
 
-<h2>Hello, world.</h2>
 
-<div class="box"></div>
+<section class="intro container-fluid">
+    <div class="container">
+
+        <div class="intro__wrapper">
+
+            <h1 class="intro__header">Inna Krishtal</h1>
+
+            <h1 class="intro__header">Front-End Web Developer</h1>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="about-me" class="about-me container">
+    <div class="about-me__inner">
+
+        <div class="row">
+
+            <div class="col-md-8">
+                <h2 class="about-me__title">About me</h2>
+
+                <div class="about-me__wrapper">
+                    <p class="about-me__description">
+                        Я начала свой путь веб разработки в 2014 году, что бы осуществить две мечты: путешествовать и
+                        созидать.
+                        И у меня это получилось!
+                    </p>
+
+                    <p class="about-me__description">
+                        После окончания профессиональных курсов для front-end developers я развивала свои навыки в
+                        нескольких
+                        компаниях (datalead, simplenight, htmlacademy) под руководством опытных разработчков, которым я
+                        очень
+                        благодарна за бесценный опыт.
+                    </p>
+
+                    <p class="about-me__description">
+                        Работая удаленно, только за последний год я жила в шести странах, а география моих будущих
+                        путешествий
+                        ограничивается только наличием интернета. Современные технологии позволяют создвать интерфейсы и
+                        воплощать идеи дизайнеров и бизнесменов, находящихся в любой части планеты.
+                    </p>
+
+                    <p class="about-me__description">
+                        Делясь наработанным опытом в роли личного наставника с начинающими веб-разработчиками в составе
+                        htmlacademy,
+                        я продолжаю постоянно обновлять и актуализировать свои навыки по последним стандартам и
+                        тенденциям
+                        индустрии.
+                    </p>
+                </div>
+
+                <h2 class="about-me__title">Education</h2>
+
+                <!--<div class="col-md-offset-1 col-md-10">-->
+
+                    <div class="about-me__wrapper">
+                        <h3>University</h3>
+
+                        <p class="about-me__text">
+                            HERZEN UNIVERSITY, St.-Petersburg.
+                        </p>
+
+                        <p class="about-me__text">
+                            Faculty of Physics. Specialties: teacher of physics, IT-teacher. (01.09.2003-27.06.2008)
+                        </p>
+
+                        <h3>Additional education</h3>
+
+                        <p class="about-me__text">
+                            «CREATING WEB INTERFACES WITH HTML & CSS» (06.11.2014 - 08.12.2014)
+                        </p>
+
+                        <p class="about-me__text">
+                            «CREATING ADVANCED WEB INTERFACES WITH HTML & CSS» (22.01.2015 - 23.02.2015)
+                        </p>
+                    </div>
+
+                <!--</div>-->
+            </div>
+
+            <div class="col-md-4">
+                <h2 class="about-me__title">Skills</h2>
+                <ul class="about-me__list">
+                    <li>HTML / CSS / LESS / Sass;</li>
+                    <li>кроссбраузерная, семантическая и валидная верстка по стандартам W3C;</li>
+                    <li>базовый уровень JavaScript, JQuery, опыт работы в проектах на PHP и Angular;</li>
+                    <li>использование в проектах методологий “Mobile first”, “progressive enhancement”, БЭМ по Николасу
+                        Галлахеру, SMACSS и OOCSS;
+                    </li>
+                    <li>адаптивная верстка;</li>
+                    <li>фреймворк Bootstrap;</li>
+                    <li>работаю с макетами из Photoshop и Sketch;</li>
+                    <li>оптимизация графики под web</li>
+                    <li>сборка иконочных шрифтов</li>
+                    <li>работа с SVG</li>
+                    <li>анимация на css</li>
+                    <li>опыт работы с системами управления версиями Git и Subversion;</li>
+                    <li>пакетные менеджеры npm и Bower</li>
+                    <li>опыт работы с платформами WordPress и Shopify</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+
+
+        </div>
+
+    </div>
+</section>
+
+<section class="portfolio-index container">
+    <a name="portfolio-index"></a>
+
+    <div class="portfolio__header">
+        <h2 class="portfolio__title">Projects</h2>
+    </div>
+
+    <div class="portfolio-index__wrapper">
+
+        <a href="portfolio.html#campusonfire" class="portfolio-index__item">
+            <div class="portfolio-index__item-wrapper">
+                <div class="hover_img">
+                    <img src="/img/campus-1.jpg" alt="">
+                </div>
+                <div class="project__description">
+                    <h4>Campus On Fire</h4>
+
+                    <p>Business card website</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="portfolio.html#simplenight" class="portfolio-index__item">
+            <div class="portfolio-index__item-wrapper">
+                <div class="hover_img">
+                    <img src="/img/simplenight-4.jpg" alt="">
+                </div>
+                <div class="project__description">
+                    <h4>SIMPLENIGHT</h4>
+
+                    <p>Aggregator</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="portfolio.html#beddog" class="portfolio-index__item">
+            <div class="portfolio-index__item-wrapper">
+                <div class="hover_img">
+                    <img src="/img/bed-dog-1.jpg" alt="">
+                </div>
+                <div class="project__description">
+                    <h4>Bed Dog USA</h4>
+
+                    <p>Online store</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="portfolio.html#omegasims" class="portfolio-index__item">
+            <div class="portfolio-index__item-wrapper">
+                <div class="hover_img">
+                    <img src="/img/omega-sims-1.jpg" alt="">
+                </div>
+                <div class="project__description">
+                    <h4>OmegaSims</h4>
+
+                    <p>Concept site</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="portfolio-index__link">
+        <a href="portfolio.html" class="btn">See more...</a>
+    </div>
+</section>
 
 {% endblock %}

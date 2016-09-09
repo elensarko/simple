@@ -1,0 +1,94 @@
+.nav {
+
+  > li {
+
+    > a {
+      font-size: 17px;
+      //text-transform: uppercase;
+      //border-bottom: 2px solid transparent;
+      margin-right: 15px;
+
+      &:hover,
+      &:focus {
+        //border-bottom: 2px solid $link-hover-color;
+      }
+    }
+  }
+
+  > li.active {
+
+    > a {
+      color: $link-hover-color;
+      //border-bottom: 2px solid $link-hover-color;
+
+      &:hover,
+      &:focus {
+       color: $link-hover-color;
+        cursor: default;
+      }
+    }
+  }
+
+  //>li.resume-link {
+  //  position: relative;
+  //  top: -12px;
+  //
+  //  a {
+  //    border: 1px solid $link-color;
+  //    border-radius: 2px;
+  //
+  //    &:hover,
+  //    &:focus {
+  //      color: #fff;
+  //      background-color: $link-color;
+  //    }
+  //  }
+  //}
+
+  +.navbar-nav > li > a {
+    padding-bottom: 12px;
+  }
+}
+
+.navbar {
+  //padding-top: 30px;
+  margin-bottom: 0;
+}
+
+
+.navbar-toggle {
+  border: 1px solid $link-color;
+  border-radius: 2px;
+
+  .icon-bar {
+    background: $link-color;
+  }
+}
+
+
+/* Стили для десктопа */
+
+@media (min-width: $screen-md-min) {
+  .navbar {
+    padding-top: 30px;
+    margin-bottom: 0;
+  }
+
+  .nav {
+    >li.resume-link {
+      position: relative;
+      top: -12px;
+
+      a {
+        border: 1px solid $link-color;
+        border-radius: 2px;
+
+        &:hover,
+        &:focus {
+          color: #fff;
+          background-color: $link-color;
+        }
+      }
+    }
+  }
+}

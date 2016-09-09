@@ -1,3 +1,5 @@
+@import "variables";
+
 
 // Core variables and mixins
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
@@ -50,9 +52,14 @@
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
-.box {
-  width: 300px;
-  height: 200px;
-  background: url('../img/kitty.jpg');
-  background-size: cover;
-}
+
+//
+@import "scaffolding";
+@import "type";
+@import "header";
+@import "navbar";
+@import "intro";
+@import "portfolio-index";
+@import "about-me";
+@import "footer";
+@import "portfolio";
